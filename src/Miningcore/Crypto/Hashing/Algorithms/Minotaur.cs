@@ -18,10 +18,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
 using System;
-using Alphaxcore.Contracts;
-using Alphaxcore.Native;
+using Miningcore.Contracts;
+using Miningcore.Native;
 
-namespace Alphaxcore.Crypto.Hashing.Algorithms
+namespace Miningcore.Crypto.Hashing.Algorithms
 {
     public unsafe class Minotaur : IHashAlgorithm
     {
