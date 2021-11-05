@@ -55,7 +55,8 @@
         "blockHasher": {
             "hash": "reverse",
             "args": [ { "hash": "sha256d" } ]
-        },
+        }
+    },
         "shareMultiplier": 65536,
         "explorerBlockLink": "https://openchains.info/coin/australiacash/block/$height$",
         "explorerTxLink": "https://openchains.info/coin/australiacash/tx/{0}",
@@ -1563,4 +1564,5 @@
             "explorerTxLink": "https://explorer.ergoplatform.com/en/transactions/{0}",
             "explorerAccountLink": "https://explorer.ergoplatform.com/en/addresses/{0}"
         }
-    }
+}
+
