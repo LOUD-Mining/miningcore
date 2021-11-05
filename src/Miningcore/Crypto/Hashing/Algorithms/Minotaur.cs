@@ -33,7 +33,7 @@ namespace Miningcore.Crypto.Hashing.Algorithms
             {
                 fixed (byte* output = result)
                 {
-                    LibNewhash.minotaur(input, output, (uint)data.Length);
+                    LibMultihash.minotaur(input, output, (uint)data.Length);
                 }
             }
         }
