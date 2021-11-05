@@ -16,6 +16,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
 #include "gr.h"
+#include "minotaur.h"
 #include "bcrypt.h"
 #include "keccak.h"
 #include "quark.h"
@@ -66,6 +67,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 extern "C" MODULE_API void gr_export(const char* input, char* output)
 {
     gr_hash(input, output);
+}
+
+extern "C" MODULE_API void minotaur_export(const char* input, char* output, uint32_t input_len)
+{
+    minotaur_hash(input, output, input_len);
 }
 
 extern "C" MODULE_API void scrypt_export(const char* input, char* output, uint32_t N, uint32_t R, uint32_t input_len)
